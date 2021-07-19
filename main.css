@@ -609,6 +609,17 @@ span {
             0 9px 0 aquamarine;
     color: #fff;
 }
+#gameName:hover{
+    text-shadow: 0 10px 0 aquamarine,
+    0px 0px 50px aquamarine,
+     0 3px 0 aquamarine,
+      0 4px 0 aquamarine,
+       0 5px 0 aquamarine,
+        0 6px 0 #6fc94e,
+         0 7px 0 #6fc94e,
+          0 8px 0 #6fc94e,
+           0 9px 0 #6fc94e;
+}
 
 #guideCard {
     max-height: 365px;

@@ -622,8 +622,15 @@ span {
            0 9px 0 #6fc94e;
 }
 
+#infomationGame {
+    max-height: 150px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 #guideCard {
-    max-height: 365px;
+    height: 350px;
+    max-height: 600px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -704,27 +711,39 @@ span {
     box-sizing: border-box;
     color: #4A4A4A;
     background-color: #e5e3e3;
-    width: 100%;
+    width: 70%;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
-
-.menuButton {
+.randomButton{
     text-align: center;
-    font-size: 23px;
-    padding: 6px;
+    font-size: 20px;
+    padding: 3px;
     box-sizing: border-box;
     color: #fff;
-    background-color: #7ee559;
-    width: 100%;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+}
+.joinButton {
+    float:right;
+    text-align: center;
+    font-size: 26px;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #7ee559;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 28%;
 }
 
-.menuButton:hover {
+.joinButton:hover {
     background-color: #6fc94e;
 }
 

@@ -610,6 +610,7 @@ span {
     color: #fff;
 }
 #gameName:hover{
+    transition: all 0.5s ease;
     text-shadow: 0 10px 0 aquamarine,
     0px 0px 50px aquamarine,
      0 3px 0 aquamarine,

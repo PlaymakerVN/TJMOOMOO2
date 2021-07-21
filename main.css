@@ -668,13 +668,13 @@ span {
     display: block;
 }
 
-/* #promoImgHolder {
+#infomationGame {
     text-align: center;
 }
 
-#promoImg:hover {
+#infomationGame:hover {
     opacity: 0.9;
-} */
+}
 
 #rightCardHolder {
     display: inline-block;
@@ -1346,9 +1346,9 @@ background-image:url('../img/textures/map.png');
 
 @media only screen and (max-width: 768px) {
     /* HOME */
-    /* #promoImgHolder {
+     #infomationGame{
         display: none !important;
-    } */
+    }
     #guideCard {
         position: absolute;
         display: none;
@@ -1607,18 +1607,15 @@ background-image:url('../img/textures/map.png');
         /* Hide if showing info box */
         display: none;
     }
-    .gameButton {
+    .joinButton {
+        text-align: center;
         bottom: 8px;
-        width: 44px;
+        width: 66px;
         height: 44px;
         padding: 0 !important;
     }
-    .gameButton i {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 34px !important;
+    .joinButton ~ span{
+        margin-top: -9px;
     }
     /* GAME MENUS */
     .allianceItem,

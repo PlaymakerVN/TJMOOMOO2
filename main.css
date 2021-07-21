@@ -218,6 +218,7 @@ span {
 }
 
 #login {
+    transition: all 1s ease;
     height: 100%;
 }
 
@@ -231,10 +232,12 @@ span {
     transform: translate(-50%, -50%);
     border-radius: 5px;
     border: solid 1px #858585;
+    transition: all 1s ease;
 }
 
 #loginDiv * {
     font-size: 20px;
+    transition: all 1s ease;
 }
 
 #consentBlock {
@@ -280,6 +283,7 @@ span {
 }
 
 #loginBlock {
+    transition: all 0.8s ease;
     position: absolute;
     left: 0;
     right: 0;
@@ -526,9 +530,9 @@ span {
     width: 300px;
     padding: 18px;
     background-color: #fff;
-    -moz-box-shadow: 0px 7px #c4c4c4;
-    -webkit-box-shadow: 0px 7px #c4c4c4;
-    box-shadow: 0px 7px #c4c4c4;
+    -moz-box-shadow: 0px 3px #c4c4c4;
+    -webkit-box-shadow: 0px 3px #c4c4c4;
+    box-shadow: 0px 3px #c4c4c4;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -537,8 +541,11 @@ span {
 
 .menuHeader {
     font-size: 24px;
-    color: #292929;
+    color: chartreuse;
     margin-bottom: 5px;
+}
+.menuHeader:hover{
+    color: aquamarine;
 }
 
 .menuText {
@@ -581,9 +588,11 @@ span {
     -moz-border-radius: 20px;
     border-radius: 20px;
     border: 3px solid #525252;
+    transition: all 0.3s ease;
 }
 
 .skinColorItem:hover {
+    transition: all 0.3s ease;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -596,6 +605,7 @@ span {
 }
 
 #gameName {
+    transition: all 1s ease;
     font-size: 170px;
     margin-bottom: -25px;
     text-shadow: 0 10px 0 #6fc94e,
@@ -610,7 +620,7 @@ span {
     color: #fff;
 }
 #gameName:hover{
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     text-shadow: 0 10px 0 aquamarine,
     0px 0px 50px aquamarine,
      0 3px 0 aquamarine,
@@ -622,15 +632,18 @@ span {
            0 9px 0 #6fc94e;
 }
 
-#infomationGame {
-    max-height: 150px;
+#infomationGame { 
+    position: absolute;
+    margin-left: -345px;
+    margin-top: 240px;
+    max-height: 130px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    width: 300px; 
 }
 
 #guideCard {
-    height: 350px;
-    max-height: 600px;
+    height: 365px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -655,13 +668,13 @@ span {
     display: block;
 }
 
-#promoImgHolder {
+/* #promoImgHolder {
     text-align: center;
 }
 
 #promoImg:hover {
     opacity: 0.9;
-}
+} */
 
 #rightCardHolder {
     display: inline-block;
@@ -715,6 +728,11 @@ span {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    transition: all 0.3s ease;
+}
+#nameInput:hover{
+    border: solid 2px chartreuse;
+    transition: all 0.3s ease;
 }
 .randomButton{
     text-align: center;
@@ -741,10 +759,12 @@ span {
     border-radius: 4px;
     cursor: pointer;
     width: 28%;
+    transition: all 0.5s ease;
 }
 
 .joinButton:hover {
     background-color: #6fc94e;
+    transition: all 0.5s ease;
 }
 
 #gameUI {
@@ -1326,9 +1346,9 @@ background-image:url('../img/textures/map.png');
 
 @media only screen and (max-width: 768px) {
     /* HOME */
-    #promoImgHolder {
+    /* #promoImgHolder {
         display: none !important;
-    }
+    } */
     #guideCard {
         position: absolute;
         display: none;
@@ -1380,7 +1400,7 @@ background-image:url('../img/textures/map.png');
         margin-top: 20px;
     }
     #setupCard {
-        width: 260px;
+        width: 240px;
         margin-top: 4px;
     }
     #partyButton {
